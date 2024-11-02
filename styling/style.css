@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.head-line{
+    font-family:cursive;
+    font-size: xx-large;
+    font: larger;
+    color:teal;
+}
+.world-wonders{
+    width: 90%;
+    display: flex;
+    align-items: center;
+  justify-content:center;
+  padding: 20px;
+
+
+}
+.world-wonder{
+    width:100px;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+
+}
