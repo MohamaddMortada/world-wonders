@@ -2,14 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #072e37;
   }
 .head-line{
     font-family:cursive;
     font-size: xx-large;
     font: larger;
-    color:teal;
+    color:beige;
 }
 .world-wonders{
+  flex-direction: column;
     width: 90%;
     display: flex;
     align-items: center;
@@ -18,9 +20,20 @@
 
 
 }
-.world-wonder{
-    width:100px;
-    padding: 20px;
-    border-bottom: 1px solid #ddd;
+.on-col{
+  flex-direction: column;
+  display: flex;
+    align-items: center;
+  justify-content:center;
 
+}
+.wonder{
+    width:100px;
+    
+    padding: 20px;
+    border-bottom: 1px solid #8f8989;
+
+}
+#image-container {
+  margin-top: 20px;
 }

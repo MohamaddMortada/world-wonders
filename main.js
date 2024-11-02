@@ -7,7 +7,7 @@ response
   })
   .then((data) => {
     data.forEach(element => {
-        console.log(element.name);
+        console.log(element);
     });
     const wonder_list=data.map(element=>({
         name:element.name,
@@ -25,6 +25,40 @@ response
 container =document.getElementById('world-wonders');
 container.innerHtml='';
 ///
+counter=0;
+wonder_list.forEach(element=>{
+    const li = document.createElement('world-wonder');
+    li.style.color='beige';
+    li.style.padding = '20px';
+    li.style.border='2px solid beige'  
+    li.style.borderRadius = '10px'
+    li.style.margin = '10px'; 
+    //li.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.2)';
+    console.log(element.name);
+    li.textContent = element.name;
+    container.appendChild(li);
+    counter++;
+    if(counter%5===0){
+        const br=document.createElement('li');
+        br.textContent="";
+        container.appendChild(br);
+    }
+    
+        let img = document.createElement('img');
+        img.src = element.links.images[0]; 
+        img.style.width = '300px';
+        img.style.height = 'auto';
+       container.appendChild(img);
+/*let col=document.createElement('on-col');
+    col.appendChild(container);*/
+
+        li.addEventListener('click',()=>{
+        localStorage.setItem('selected',JSON.stringify(element));
+        window.location.href = "data.html"; 
+    })
+
+})
+
 
 })
   .catch((error) => {
