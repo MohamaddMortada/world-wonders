@@ -6,51 +6,43 @@
     display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   }
 .head-line{
+  padding: 20px;
     font-family:cursive;
-    font-size:100px;
-    font: larger;
+    font-size:70px;
+    
     color:beige;
 }
-.world-wonders{
-  flex-direction: column;
-    display: flex;
-    align-items: center;
-  justify-content:center;
-  padding: 20px;
-
-
-}
-.on-col{
-  flex-direction: column;
-  display: flex;
-    align-items: center;
-  justify-content:center;
-
-}
 .wonder{
-    background-color: beige;
-    color:#072e37;
+    background-color: #072e37;
+    color:beige;
     width:80%;
-    margin: 10px;;
+    margin: 10px;
     padding-top: 10px;
 
 }
 .image-container {
-padding: 5px;
+width:80%;
+ max-width: 400px;
+  background-color: beige;
+  padding: 20px;
   margin: 20px;
 }
 .cont{
-  background-color: beige;
-  width:80%;
+  margin:10px;
+  background-color: #072e37;
+  width:100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 #container{
+  margin:20px;
+  border:2px solid beige;
+  background-color: #072e37;
   width:100%;
   display: flex;
   flex-wrap: wrap;
@@ -60,7 +52,7 @@ padding: 5px;
 #container > box {
   flex: 25%;
   box-sizing: border-box;
-   border : 2px solid beige;
+   border : 2px solid #072e37;
   padding:20px;
   background-color: beige;
   text-align: center;
@@ -77,7 +69,7 @@ padding: 5px;
   box-sizing: border-box;
    border : 2px solid beige;
   padding:20px;
-  background-color: beige;
+  background-color: #072e37;
   text-align: center;
   border-radius: 5px;
   width:70%;
