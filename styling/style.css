@@ -3,16 +3,19 @@
     padding: 0;
     box-sizing: border-box;
     background-color: #072e37;
+    display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
   }
 .head-line{
     font-family:cursive;
-    font-size: xx-large;
+    font-size:100px;
     font: larger;
     color:beige;
 }
 .world-wonders{
   flex-direction: column;
-    width: 90%;
     display: flex;
     align-items: center;
   justify-content:center;
@@ -28,12 +31,59 @@
 
 }
 .wonder{
-    width:100px;
-    
-    padding: 20px;
-    border-bottom: 1px solid #8f8989;
+    background-color: beige;
+    color:#072e37;
+    width:80%;
+    margin: 10px;;
+    padding-top: 10px;
 
 }
-#image-container {
-  margin-top: 20px;
+.image-container {
+padding: 5px;
+  margin: 20px;
+}
+.cont{
+  background-color: beige;
+  width:80%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+#container{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+#container > box {
+  flex: 25%;
+  box-sizing: border-box;
+   border : 2px solid beige;
+  padding:20px;
+  background-color: beige;
+  text-align: center;
+  border-radius: 5px;
+  width:25%;
+  margin:20px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+}
+.box {
+  flex: 25%;
+  box-sizing: border-box;
+   border : 2px solid beige;
+  padding:20px;
+  background-color: beige;
+  text-align: center;
+  border-radius: 5px;
+  width:70%;
+  margin:20px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
 }
