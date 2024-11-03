@@ -31,7 +31,7 @@ if(selected){
         img.src = selected.links.images[1]; 
         img.style.width = '100%';
         //img.style.minWidth='250px'
-        img.style.height = '300px';
+        img.style.height = '250px';
         
         img.style.margin='2px';
         
@@ -43,7 +43,7 @@ if(selected){
         img2.src = selected.links.images[2]; 
         img2.style.width = '100%';
         //img2.style.minWidth='250px'
-        img2.style.height = '300px';
+        img2.style.height = '250px';
         
         img2.style.margin='2px';
         container2.appendChild(img2);

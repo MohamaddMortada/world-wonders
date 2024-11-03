@@ -38,8 +38,9 @@ wonder_list.forEach(element=>{
     let name = document.createElement('p');
     name.textContent = element.name; 
     name.style.margin = '10px 0 0';
-    name.style.fontSize = '18px';
+    name.style.fontSize = 'x-large';
     name.style.color = '#072e37';
+    name.style.fontFamily = 'cursive';
     name.style.backgroundColor='beige'
 
 
